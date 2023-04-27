@@ -1,0 +1,31 @@
+<title>Zadanie 66</title>
+<p>first-line</p>
+  <pre>
+    ten pseudoelement pozwala na stylizowanie pierwszej linii tekstu w bloku.
+    Możemy go wykorzystać do dodania stylów, takich jak kolor, wielkość czcionki czy marginesy, wyłącznie dla pierwszej linii tekstu.
+
+    Oto przykładowy kod CSS:
+    p:first-line {color: red; font-weight: bold;}
+  </pre>
+
+<p>":after" oraz ":before"</p>
+  <pre>
+    te pseudoelementy umożliwiają wstawienie zawartości przed lub po wybranym elementem. 
+    Możemy wykorzystać je do dodania dekoracji, takich jak ikony lub symbole, bez ingerencji w kod HTML dokumentu. 
+    
+    Oto przykład użycia tych pseudoelementów:
+  
+    p:before{content:"TO SĄ ĆWICZENIA"; font-size:15pt; font-style:italic; font-weight:bold;}
+    p:after{content:"AUTOR Król Lew"; font-size:15pt; font-style:italic; font-weight:bold;}
+    a::after {content: "(kliknij mnie!)"; color: blue; font-style:italic;}
+  </pre>
+
+<p>first-letter</p>
+  <pre>
+    Ten pseudoelement pozwala na stylizowanie pierwszej litery tekstu w bloku. 
+    Możemy wykorzystać go do dodania stylów, takich jak kolor, wielkość czcionki czy marginesy, wyłącznie dla pierwszej litery tekstu. 
+    
+    Oto przykładowy kod CSS:
+    
+    h1:first-letter {font-size: 2em; color: purple;}
+  </pre>

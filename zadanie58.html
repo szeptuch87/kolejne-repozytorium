@@ -1,0 +1,54 @@
+<p>
+  <h1>Pseudoklasy</h1>
+    Pseudoklasy to specjalne selektory w CSS, które umożliwiają odwołanie się do elementów w specyficznych stanach, takich jak nadawanie stylów linkom, które zostały już odwiedzone przez użytkownika.
+  <h2>Uwaga dotycząca dwukropka:</h2>
+    W CSS dwukropek jest używany do oddzielenia selektorów od ich deklaracji stylów. 
+    Należy pamiętać, że po dwukropku należy umieścić przynajmniej jedną deklarację stylu, w przeciwnym razie deklaracja nie będzie miała skutku.
+  <h3>Zastosowanie pseudoklasy ":active"</h3>
+    Pseudoklasa ":active" umożliwia nadanie stylów elementowi, gdy jest on aktywny lub wybrany przez użytkownika, np. gdy przycisk jest wciśnięty.<br>
+    Można zastosować tę pseudoklasę, aby zmienić kolor lub tło elementu, aby użytkownik miał informację, że kliknął na dany element.  
+</p>
+  <table>
+    <tr>
+      <th>Pseudoklasa</th>
+      <th>Opis</th>
+    </tr>
+    <tr>
+      <td>":hover"</td>
+      <td>Odwołuje się do elementu, gdy wskaźnik myszy znajduje się nad nim</td>
+    </tr>
+    <tr>
+      <td>":active"</td>
+      <td>Odwołuje się do elementu, gdy jest on aktywny lub wybrany przez użytkownika</td>
+    </tr>
+    <tr>
+      <td>":visited"</td>
+      <td>Odwołuje się do elementu, który został już odwiedzony przez użytkownika</td>
+    </tr>
+    <tr>
+      <td>":focus"</td>
+      <td>Odwołuje się do elementu, który jest w fokurze, czyli jest aktualnie wybrany przez użytkownika(np. pole tekstowe)</td>
+    </tr>
+  </table>
+<h5>Przykłady kodów definiowania pseudoklas:</h5>
+<p>1. Arkusz wykorzystujący :link oraz :visited pseudoklasy w połączeniu z selektorem A.</p>
+  <pre>
+  A:link{color:blue;}
+  A:visited{color:red;}
+  </pre>
+<p>2. Formatowanie wyglądu wszystkich odnośników w dokumencie XHTML/HTML.</p>
+  <pre>
+    /* Definicja odsyłacza podstawowego */
+
+    A{font-size:12pt; text-decoration:none;}
+
+    A:link{color:purple;}
+
+    A:visited{color:green;}
+
+    A:hover{color:red;}
+  </pre>
+<p>3.Temat: Zastosowanie :focus</p>
+  <pre>
+    A:focus{color:brown;}
+  </pre>
